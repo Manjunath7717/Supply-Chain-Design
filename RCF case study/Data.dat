@@ -1,0 +1,31 @@
+set RPW := RPWBangalore RPWHospet RPWRaichur RPWGulbarga RPWBellary;
+set FPW := FPWGulbarga FPWBelgaum FPWBangalore FPWMysore FPWDharwar FPWRaichur FPWBellary FPWHassan FPWChitradurg;
+
+param FactoryCost:=
+RPWBangalore 320
+RPWHospet 250
+RPWRaichur 203
+RPWGulbarga 145
+RPWBellary  230;
+
+param AvgDemand:=
+FPWGulbarga  46.25
+FPWBelgaum 27.125
+FPWBangalore 37.375
+FPWMysore  21.75
+FPWDharwar  15.125
+FPWRaichur  30.5
+FPWBellary  10.125
+FPWHassan  12.25
+FPWChitradurg 8.625;
+
+
+param Cost: 
+	       FPWBangalore FPWRaichur FPWGulbarga FPWBellary FPWDharwar FPWBelgaum FPWMysore FPWHassan FPWChitradurg:=
+RPWBangalore 0            113        133          102       130         139       83        102        115 
+RPWHospet    156          103        139           42        83         120       161       139       5000 		 
+RPWRaichur   185           0         124          105       145         162       227       201       5000
+RPWGulbarga  386          156         0           204       176         180       283       270       5000
+RPWBellary   157          108        156           0        108         138       182       191       5000;
+
+

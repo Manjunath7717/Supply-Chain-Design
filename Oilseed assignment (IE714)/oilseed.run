@@ -1,0 +1,11 @@
+reset;
+model oilseed.mod;
+data oilseed.dat;
+option solver gurobi;
+solve;
+display yi;
+display xhi;
+display ye;
+display xej;
+display Xij;
+display xie;
